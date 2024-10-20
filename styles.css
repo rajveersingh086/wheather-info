@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #2193b0);
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300%;
+    max-width: 600px;
+}
+
+.weather-box {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 300%;
+    max-width: 600px;
+    max-height: 500px;
+    text-align: center;
+}
+
+.location-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    width: 220px;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+input:focus {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.4s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff6a85, #ff92b3);
+    transform: translateY(-3px);
+}
+
+button:active {
+    background: linear-gradient(135deg, #ff5d7b, #ff8aaa);
+    transform: translateY(0);
+}
+
+.weather-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.weather-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #e42d2dca;
+}
+
+.weather-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #020201;
+}
+
+.weather-info p {
+    font-size: 1.2rem;
+    color: rgba(54, 41, 41, 0.9);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .weather-box {
+        padding: 50px;
+    }
+
+    .location-input input {
+        width: 280px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+}
